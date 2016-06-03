@@ -1,0 +1,5 @@
+pod 'AFNetworking', '~> 3.0.4'
+pod 'MJRefresh', '~> 3.0.8'
+pod 'MBProgressHUD', '~> 0.9.2'
+pod 'FMDB', '~> 2.5'
+pod 'SDWebImage', '~> 3.7.3'

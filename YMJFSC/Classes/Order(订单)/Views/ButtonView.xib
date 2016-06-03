@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ButtonView">
+            <rect key="frame" x="0.0" y="0.0" width="143" height="42"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UsF-cO-bBl">
+                    <rect key="frame" x="0.0" y="0.0" width="143" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="UsF-cO-bBl" secondAttribute="height" multiplier="143:35" id="K8E-hH-19s"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="anu-Wr-T2g">
+                    <rect key="frame" x="0.0" y="35" width="143" height="7"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="7" id="VZO-Ub-EIR"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="anu-Wr-T2g" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2uU-ZQ-PVL"/>
+                <constraint firstItem="UsF-cO-bBl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="TLv-zV-iF9"/>
+                <constraint firstItem="anu-Wr-T2g" firstAttribute="top" secondItem="UsF-cO-bBl" secondAttribute="bottom" id="kEy-0y-Pb3"/>
+                <constraint firstAttribute="trailing" secondItem="UsF-cO-bBl" secondAttribute="trailing" id="kGD-1j-Clx"/>
+                <constraint firstAttribute="trailing" secondItem="anu-Wr-T2g" secondAttribute="trailing" id="tem-g6-KJk"/>
+                <constraint firstItem="UsF-cO-bBl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ybG-dC-5za"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="statusView" destination="anu-Wr-T2g" id="zge-99-dAx"/>
+                <outlet property="titleLabel" destination="UsF-cO-bBl" id="gxg-Se-Ak4"/>
+            </connections>
+            <point key="canvasLocation" x="173.5" y="59"/>
+        </view>
+    </objects>
+</document>

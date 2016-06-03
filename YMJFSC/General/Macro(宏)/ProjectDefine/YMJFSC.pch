@@ -1,0 +1,33 @@
+//
+//  YMJFSC.pch
+//  YMJFSC
+//
+//  Created by mazg on 16/1/8.
+//  Copyright © 2016年 mazg. All rights reserved.
+//
+
+#ifndef YMJFSC_pch
+#define YMJFSC_pch
+
+#import <UIKit/UIKit.h>
+//宏定义
+#import "UtilsDefine.h"
+#import "ColorDefine.h"
+#import "FieldDefine.h"
+#import "RequestDefine.h"
+#import "PathDefine.h"
+#import "SystemDefine.h"
+#import "FontDefine.h"
+#import "FrameDefine.h"
+
+#import "AFNetworking.h"
+#import "MBProgressHUD.h"
+#import "MBProgressHUD+MJ.h"
+#import "UIImageView+WebCache.h"
+#import "HttpRequest.h"
+#import "UserModel.h"
+#import "MJRefresh.h"
+
+#import "ResponseObject.h"
+
+#endif /* YMJFSC_pch */

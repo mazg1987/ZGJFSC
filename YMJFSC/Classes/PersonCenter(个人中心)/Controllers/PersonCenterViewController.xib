@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonCenterViewController">
+            <connections>
+                <outlet property="imgView" destination="rio-hV-kcm" id="qzh-Vw-Xpg"/>
+                <outlet property="phoneLabel" destination="3FP-3q-CMN" id="d2t-Ko-Vix"/>
+                <outlet property="pointLabel" destination="TcF-vS-NqJ" id="LpW-J6-96J"/>
+                <outlet property="tabelView" destination="FF9-qk-cUM" id="QpP-um-MRu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="个人beijing" translatesAutoresizingMaskIntoConstraints="NO" id="rio-hV-kcm">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="186"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="rio-hV-kcm" secondAttribute="height" multiplier="160:93" id="Uu5-1J-cI2"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3FP-3q-CMN">
+                    <rect key="frame" x="105" y="117" width="111" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="481-pm-IZA"/>
+                        <constraint firstAttribute="width" constant="111" id="yoi-nS-O2x"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcF-vS-NqJ">
+                    <rect key="frame" x="105" y="148" width="111" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FF9-qk-cUM">
+                    <rect key="frame" x="0.0" y="186" width="320" height="382"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="1hA-5T-C5O"/>
+                        <outlet property="delegate" destination="-1" id="zKk-o6-z4e"/>
+                    </connections>
+                </tableView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="个人touxiang" translatesAutoresizingMaskIntoConstraints="NO" id="brq-Rh-66n">
+                    <rect key="frame" x="125" y="36" width="70" height="68"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="GQO-yb-plE"/>
+                        <constraint firstAttribute="height" constant="68" id="eqV-vc-dWp"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TcF-vS-NqJ" secondAttribute="trailing" constant="104" id="1Or-UH-uyl"/>
+                <constraint firstItem="3FP-3q-CMN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2gA-dV-pya"/>
+                <constraint firstItem="TcF-vS-NqJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="105" id="9pZ-Zo-9l2"/>
+                <constraint firstItem="brq-Rh-66n" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AX7-xt-7rY"/>
+                <constraint firstItem="3FP-3q-CMN" firstAttribute="top" secondItem="brq-Rh-66n" secondAttribute="bottom" constant="13" id="BrD-8k-NoR"/>
+                <constraint firstItem="FF9-qk-cUM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="E4v-3u-oQf"/>
+                <constraint firstItem="rio-hV-kcm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Le6-Cz-HeW"/>
+                <constraint firstItem="TcF-vS-NqJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="OWK-XR-vdR"/>
+                <constraint firstItem="TcF-vS-NqJ" firstAttribute="top" secondItem="3FP-3q-CMN" secondAttribute="bottom" constant="9" id="dmm-LV-g6b"/>
+                <constraint firstAttribute="bottom" secondItem="FF9-qk-cUM" secondAttribute="bottom" id="fYj-Mj-5cv"/>
+                <constraint firstAttribute="trailing" secondItem="rio-hV-kcm" secondAttribute="trailing" id="gnk-R0-w4Q"/>
+                <constraint firstItem="brq-Rh-66n" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="36" id="lgG-QP-Om0"/>
+                <constraint firstItem="rio-hV-kcm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mtJ-eJ-C3O"/>
+                <constraint firstAttribute="trailing" secondItem="FF9-qk-cUM" secondAttribute="trailing" id="vgd-eM-W5h"/>
+                <constraint firstItem="FF9-qk-cUM" firstAttribute="top" secondItem="rio-hV-kcm" secondAttribute="bottom" id="xh6-S1-Anu"/>
+            </constraints>
+            <point key="canvasLocation" x="278" y="308"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="个人beijing" width="320" height="198"/>
+        <image name="个人touxiang" width="72" height="72"/>
+    </resources>
+</document>

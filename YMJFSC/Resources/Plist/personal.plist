@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>icon</key>
+		<string>xdf_personal_study_remind</string>
+		<key>title</key>
+		<string>学习提醒</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>xdf_personal_progress</string>
+		<key>title</key>
+		<string>我的进度</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>xdf_personal_download</string>
+		<key>title</key>
+		<string>我的下载</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>xdf_personal_setting</string>
+		<key>title</key>
+		<string>基本设置</string>
+	</dict>
+</array>
+</plist>
